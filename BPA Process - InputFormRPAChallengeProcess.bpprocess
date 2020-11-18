@@ -1,0 +1,31 @@
+﻿<process name="InputFormRPAChallengeProcess" version="1.0" bpversion="6.9.0.26970" narrative="" byrefcollection="true" preferredid="1035f726-fe5a-4d62-9d73-ff5149f434ba">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="014dc6e0-b595-4c52-974c-07ad63a47eda" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>f0fd948a-8f4e-405e-ac0d-3ec83afd0ec6</onsuccess>
+  </stage>
+  <stage stageid="338cdd34-3024-4354-aae4-72c3243d4781" name="End" type="End">
+    <display x="15" y="45" />
+  </stage>
+  <stage stageid="9d3ba064-9592-4fd3-b519-9a362556d183" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="f0fd948a-8f4e-405e-ac0d-3ec83afd0ec6" name="InputForm::Form" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>36c240e3-6065-40a4-99f9-dcf5d1295174</onsuccess>
+    <resource object="InputForm" action="Form" />
+  </stage>
+  <stage stageid="36c240e3-6065-40a4-99f9-dcf5d1295174" name="InputForm::Open ExcelSheet" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>338cdd34-3024-4354-aae4-72c3243d4781</onsuccess>
+    <resource object="InputForm" action="Open ExcelSheet" />
+  </stage>
+</process>
